@@ -1,8 +1,10 @@
 # PSet-1
 
 Nome: Fellipe de Souza Torres Dutra  
-Professor: Abrantes Araújo Silva Filho  
 Disciplina: Design e Desenvolvimento de Banco de Dados  
-Turma: CC1M (2022/2)  
+Professor: Abrantes Araújo Silva Filho
+Turma: cc1m
+
+
 
 
