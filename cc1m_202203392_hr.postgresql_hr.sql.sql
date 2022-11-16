@@ -1,3 +1,11 @@
+-- Pset 1
+--
+-- Nome: Fellipe de Souza Torres Dutra
+-- Professor: Abrantes Araújo Silva Filho
+-- Disciplina: Design e Desenvolvimento de Banco de Dados
+-- Turma: cc1m
+
+
 -- Criação de usuário e banco de dados.
 psql -U postgres
 computacao@raiz
