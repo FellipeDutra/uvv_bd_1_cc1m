@@ -10,7 +10,7 @@ mysql -u fellipe -p
 202203392
 USE uvv;
 
--- Criação de tabelas e relações
+-- Criação tabelas e relações
 
 CREATE TABLE cargos (
                 id_cargo VARCHAR(10) NOT NULL,
