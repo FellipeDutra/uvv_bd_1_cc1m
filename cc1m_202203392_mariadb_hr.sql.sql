@@ -4,7 +4,7 @@ computacao@raiz
 CREATE USER fellipe IDENTIFIED BY '202203392';
 CREATE DATABASE uvv;
 GRANT ALL ON *.* TO fellipe;
-EXIT
+
 
 mysql -u fellipe -p
 202203392
