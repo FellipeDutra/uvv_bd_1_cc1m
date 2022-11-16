@@ -14,31 +14,36 @@ CREATE USER fellipe WITH PASSWORD '202203392';
 ALTER USER fellipe WITH SUPERUSER;
 CREATE DATABASE uvv
     WITH 
-    OWNER = fellipe
-    TEMPLATE = template0
-    ENCODING = 'UTF8'
-    LC_COLLATE = 'pt_BR.UTF-8'
+       OWNER = fellipe
+           TEMPLATE = template0
+       ENCODING = 'UTF8'
+      LC_COLLATE = 'pt_BR.UTF-8'
     LC_CTYPE = 'pt_BR.UTF-8'
-    ALLOW_CONNECTIONS = true;
+  allow_connections = true
+  ;
+
 GRANT TEMPORARY, CONNECT ON DATABASE uvv TO PUBLIC;
 GRANT ALL ON DATABASE uvv TO fellipe;
 ALTER DEFAULT PRIVILEGES
 GRANT ALL ON TABLES TO fellipe;
-exit
+
 
 psql -U fellipe uvv
 202203392
 
--- Schemas
+-- Schemas hr
+
 CREATE SCHEMA hr
 AUTHORIZATION fellipe;
+
+-- Colocando o schema hr como padrão
 
 SHOW SEARCH_PATH;
 SELECT CURRENT_SCHEMA();
 SET SEARCH_PATH TO hr, "\$user", public;
 ALTER USER fellipe SET SEARCH_PATH TO hr, "\$user", public;
 
--- Tabelas
+--Criação das Tabelas e suas constraints*
 
 CREATE TABLE cargos (
                 id_cargo VARCHAR(10) NOT NULL,
